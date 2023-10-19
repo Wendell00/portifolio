@@ -41,7 +41,7 @@ export const Background = () => {
                 "composite": "destination-out",
                 "cover": {
                   "color": {
-                    "value": "#fff"
+                    "value": "#c1deee"
                   },
                   "opacity": 1
                 },
@@ -161,7 +161,7 @@ export const Background = () => {
                     "area": {
                       "gradient": {
                         "start": {
-                          "value": "#ffffff"
+                          "value": "#c1deee"
                         },
                         "stop": {
                           "value": "#000000"
@@ -225,7 +225,7 @@ export const Background = () => {
                   }
                 },
                 "color": {
-                  "value": "#ffffff",
+                  "value": "#c1deee",
                   "animation": {
                     "h": {
                       "count": 0,
@@ -371,17 +371,8 @@ export const Background = () => {
                   "options": {
                     "character": {
                       "value": [
-                        "t",
-                        "s",
-                        "P",
-                        "a",
-                        "r",
-                        "t",
-                        "i",
-                        "c",
-                        "l",
-                        "e",
-                        "s"
+                        "w",
+                        "B",
                       ],
                       "font": "Verdana",
                       "style": "",
@@ -390,17 +381,8 @@ export const Background = () => {
                     },
                     "char": {
                       "value": [
-                        "t",
-                        "s",
-                        "P",
-                        "a",
-                        "r",
-                        "t",
-                        "i",
-                        "c",
-                        "l",
-                        "e",
-                        "s"
+                        "w",
+                        "B",
                       ],
                       "font": "Verdana",
                       "style": "",
@@ -432,7 +414,7 @@ export const Background = () => {
                 "stroke": {
                   "width": 1,
                   "color": {
-                    "value": "#ffffff",
+                    "value": "#c1deee",
                     "animation": {
                       "h": {
                         "count": 0,
@@ -605,7 +587,7 @@ export const Background = () => {
                 "links": {
                   "blink": false,
                   "color": {
-                    "value": "#ffffff"
+                    "value": "#c1deee"
                   },
                   "consent": false,
                   "distance": 150,
