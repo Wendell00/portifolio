@@ -8,6 +8,9 @@ import {Damion} from 'next/font/google'
 import { motion } from 'framer-motion'
 import Link from 'next/link'
 import { TypeAnimation } from 'react-type-animation'
+import { FormContextProvider } from '../context/FormContext'
+import { useContext } from 'react'
+import { FormContext } from '../context/FormContext'
  
 const damion = Damion({
   weight: '400',
@@ -16,7 +19,7 @@ const damion = Damion({
 
 export default function Home() {
   return (
-    <>
+    <FormContextProvider>
       <NavBar/>
       <main className='w-screen h-screen'>
       <div className='absolute top-0 z-30 flex h-full w-full flex-row items-center justify-center bg-transparent px-6 py-12 text-center md:px-12 lg:text-left'>
@@ -87,7 +90,7 @@ export default function Home() {
         </div>
       </main>
       <Background/>
-    </>
+    </FormContextProvider>
 
   )
 }

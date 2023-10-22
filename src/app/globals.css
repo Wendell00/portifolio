@@ -24,4 +24,102 @@ body {
       rgb(var(--background-end-rgb))
     )
     #000030;
+  overflow-x: hidden;
+}
+
+@keyframes bounce {
+  0%,
+  60%,
+  100% {
+    transform: translateY(0);
+  }
+  30% {
+    transform: translateY(-4px);
+  }
+}
+
+.form-loading-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 10px;
+  background-image: linear-gradient(to right, #000030, #c1deee);
+  transform: translateX(100%);
+  animation: shift-rightwards 1s ease-in-out infinite;
+  animation-delay: 0.5s;
+  z-index: 9999;
+}
+
+@keyframes shift-rightwards {
+  0% {
+    transform: translateX(-100%);
+  }
+  40% {
+    transform: translateX(0%);
+  }
+  60% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.icon-toggler-container {
+  height: 25px;
+  width: 50px;
+  background-image: linear-gradient(to right, #000030, #c1deee);
+  border-radius: 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.handle {
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  overflow: hidden;
+}
+
+.toggler-icon {
+  color: #fafafa;
+}
+
+[data-darkmode='true'] {
+  background-color: #ec4899;
+}
+
+[data-darkmode='true'] .icon-toggler-container {
+  background-image: linear-gradient(to right, #000030, #c1deee);
+}
+
+[data-darkmode='true'] .toggler-icon {
+  color: #fafafa;
+}
+
+@media only screen and (min-width: 768px) {
+  .prose {
+    width: 80ch;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .icon-toggler-container {
+    height: 25px;
+    width: 40px;
+  }
+
+  .handle {
+    height: 20px;
+    width: 20px;
+  }
 }

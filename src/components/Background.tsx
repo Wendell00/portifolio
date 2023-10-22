@@ -5,8 +5,15 @@ import type { Container, Engine } from "tsparticles-engine";
 import Particles from "react-particles";
 //import { loadFull } from "tsparticles"; // if you are going to use `loadFull`, install the "tsparticles" package too.
 import { loadSlim } from "tsparticles-slim"; // if you are going to use `loadSlim`, install the "tsparticles-slim" package too.
+import { useContext } from 'react'
+import { FormContext } from '../context/FormContext'
+
 
 export const Background = () => {
+
+  const {currentTheme} = useContext(FormContext)
+  const actuallyColor = currentTheme == 'dark' ? '#000' : '#c1deee'
+
     const particlesInit = useCallback(async (engine: Engine) => {
         console.log(engine);
 
@@ -41,7 +48,7 @@ export const Background = () => {
                 "composite": "destination-out",
                 "cover": {
                   "color": {
-                    "value": "#c1deee"
+                    "value": actuallyColor
                   },
                   "opacity": 1
                 },
@@ -161,7 +168,7 @@ export const Background = () => {
                     "area": {
                       "gradient": {
                         "start": {
-                          "value": "#c1deee"
+                          "value": actuallyColor
                         },
                         "stop": {
                           "value": "#000000"
@@ -225,7 +232,7 @@ export const Background = () => {
                   }
                 },
                 "color": {
-                  "value": "#c1deee",
+                  "value": actuallyColor,
                   "animation": {
                     "h": {
                       "count": 0,
@@ -414,7 +421,7 @@ export const Background = () => {
                 "stroke": {
                   "width": 1,
                   "color": {
-                    "value": "#c1deee",
+                    "value": actuallyColor,
                     "animation": {
                       "h": {
                         "count": 0,
@@ -587,7 +594,7 @@ export const Background = () => {
                 "links": {
                   "blink": false,
                   "color": {
-                    "value": "#c1deee"
+                    "value": actuallyColor
                   },
                   "consent": false,
                   "distance": 150,
