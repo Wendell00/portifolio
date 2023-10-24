@@ -39,10 +39,6 @@ export default function NavBar() {
 
   const element = document.querySelector('body') as HTMLBodyElement
 
-  useEffect(() => {
-    console.log(currentTheme, colorContrast)
-  }, [])
-
   const handleThemeColor = () => {
     currentTheme == 'dark' ? setTheme('light') : setTheme('dark')
     setIsOn(!isOn)
