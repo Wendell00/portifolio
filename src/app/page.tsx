@@ -64,7 +64,7 @@ export default function Home() {
                   transition={{ type: 'spring', stiffness: 30, delay: 0.5 }}>
                   <Link
                     className='mr-2 rounded-xl bg-[#c1deee] px-7 py-3.5 text-sm font-medium uppercase leading-snug text-[#000030] shadow-xl transition duration-150 ease-in-out hover:border-[#000030] hover:bg-[#000030] hover:text-zinc-50 hover:shadow-2xl focus:border-[#000030] focus:bg-[#000030] focus:text-zinc-50 focus:shadow-2xl focus:outline-none focus:ring-0 active:bg-[#000030] active:shadow-2xl'
-                    href='/christians-resume.pdf'
+                    href='/wendell-curriculo.pdf'
                     role='button'
                     target='_blank'
                     aria-label='Resume download button'

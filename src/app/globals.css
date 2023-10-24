@@ -25,6 +25,7 @@ body {
     )
     #000030;
   overflow-x: hidden;
+  height: 100vh;
 }
 
 @keyframes bounce {

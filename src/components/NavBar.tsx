@@ -30,7 +30,8 @@ import {
 
 export default function NavBar() {
   const {currentTheme, setTheme} = useContext(FormContext)
-  const colorContrast = currentTheme == 'dark' ? '#000' : '#c1deee'
+  const colorContrast = currentTheme == 'dark' ? 'hover:text-[#000030]' : 'hover:text-[#c1deee]'
+  const colorContrastHoverNav = currentTheme == 'dark' ? 'hover:text-[#fff]' : 'hover:text-[#c1deee]'
   const colorContrastUI = currentTheme == 'dark' ? '#c1deee' : '#000030'
   const colorContrastWB = currentTheme == 'dark' ? '#000030' : '#fff'
   const [isOn, setIsOn] = useState(false)
@@ -62,13 +63,13 @@ export default function NavBar() {
 
   return (
     <nav className='w-screen h-[90px] flex justify-between items-center px-[50px] fixed z-40'>
-      <p className={`${damion.className} text-4xl bold shadow-black cursor-pointer`}>WB</p>
+      <p className={`${damion.className} text-4xl bold shadow-black cursor-pointer text-[${colorContrastWB}]`}>WB</p>
       <ul className='items-center h-full hidden md:flex'>
-        <li className={`mr-6 cursor-pointer text-white hover:text-[${colorContrast}]`}>Inicio</li>
-        <li className={`mr-6 cursor-pointer text-white hover:text-[${colorContrast}]`}>Sobre</li>
-        <li className={`mr-6 cursor-pointer text-white hover:text-[${colorContrast}]`}>Portfolio</li>
-        <li className={`mr-6 cursor-pointer text-white hover:text-[${colorContrast}]`}>Currículo</li>
-        <li className={`mr-6 cursor-pointer text-white hover:text-[${colorContrast}]`}>Contato</li>
+        <li className={`mr-6 cursor-pointer text-white ${colorContrast}`}>Inicio</li>
+        <li className={`mr-6 cursor-pointer text-white ${colorContrast}`}>Sobre</li>
+        <li className={`mr-6 cursor-pointer text-white ${colorContrast}`}>Portfolio</li>
+        <li className={`mr-6 cursor-pointer text-white ${colorContrast}`}>Currículo</li>
+        <li className={`mr-6 cursor-pointer text-white ${colorContrast}`}>Contato</li>
       </ul>
       <div
         className='icon-toggler-container hidden md:flex'
@@ -92,9 +93,8 @@ export default function NavBar() {
         </motion.div>
       </div>
       <div className='z-50 mr-3 flex cursor-pointer flex-row items-center justify-center md:hidden'>
-        {!nav && (
           <div
-            className='icon-toggler-container flex mr-5 p-4'
+            className='icon-toggler-container flex mr-5 p-4 relative z-90'
             data-darkmode={isOn}
             onClick={handleThemeColor}
             style={{ justifyContent: isOn ? 'flex-end' : 'flex-start' }}>
@@ -114,7 +114,6 @@ export default function NavBar() {
               </motion.i>
             </motion.div>
           </div>
-        )}
         <div onClick={handleNav}>
           <svg
             width='29'
@@ -155,7 +154,7 @@ export default function NavBar() {
             animate={nav ? 'open' : 'closed'}
             variants={secondVariant}>
             <Link
-              className={`font-light transition duration-150 ease-in-out text-[${colorContrastWB}] hover:text-[${colorContrast}]`}
+              className={`font-light transition duration-150 ease-in-out text-[${colorContrastWB}] ${colorContrastHoverNav}`}
               href='/'
               aria-label='Wendell Borges | Home Page'
               onClick={handleNav}>
@@ -168,7 +167,7 @@ export default function NavBar() {
             animate={nav ? 'open' : 'closed'}
             variants={thirdVariant}>
             <Link
-              className={`font-light transition duration-150 ease-in-out text-[${colorContrastWB}] hover:text-[${colorContrast}]`}
+              className={`font-light transition duration-150 ease-in-out text-[${colorContrastWB}] ${colorContrastHoverNav}`}
               href='/about'
               aria-label='Wendell Borges | About Page'
               onClick={handleNav}>
@@ -181,7 +180,7 @@ export default function NavBar() {
             animate={nav ? 'open' : 'closed'}
             variants={fourthVariant}>
             <Link
-              className={`font-light transition duration-150 ease-in-out text-[${colorContrastWB}] hover:text-[${colorContrast}]`}
+              className={`font-light transition duration-150 ease-in-out text-[${colorContrastWB}] ${colorContrastHoverNav}`}
               href='/portfolio'
               aria-label='Wendell Borges | Portfolio Page'
               onClick={handleNav}>
@@ -194,7 +193,7 @@ export default function NavBar() {
             animate={nav ? 'open' : 'closed'}
             variants={fifthVariant}>
             <Link
-              className={`font-light transition duration-150 ease-in-out text-[${colorContrastWB}] hover:text-[${colorContrast}]`}
+              className={`font-light transition duration-150 ease-in-out text-[${colorContrastWB}] ${colorContrastHoverNav}`}
               href='/blog'
               onClick={handleNav}
               aria-label='Wendell Borges | Blog Page'>
@@ -207,7 +206,7 @@ export default function NavBar() {
             animate={nav ? 'open' : 'closed'}
             variants={sixthVariant}>
             <Link
-              className={`font-light transition duration-150 ease-in-out text-[${colorContrastWB}] hover:text-[${colorContrast}]`}
+              className={`font-light transition duration-150 ease-in-out text-[${colorContrastWB}] ${colorContrastHoverNav}`}
               href='/contact'
               aria-label='Wendell Borges | Contact Page'
               onClick={handleNav}>
