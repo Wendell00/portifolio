@@ -9,13 +9,14 @@ import { motion } from 'framer-motion'
 import Link from 'next/link'
 import { TypeAnimation } from 'react-type-animation'
 import { FormContextProvider } from '../context/FormContext'
-import { useContext } from 'react'
+import { useContext} from 'react'
 import { FormContext } from '../context/FormContext'
  
 const damion = Damion({
   weight: '400',
   subsets: ['latin'],
 })
+
 
 export default function Home() {
   return (

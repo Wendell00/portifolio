@@ -9,12 +9,12 @@ import Link from 'next/link'
 import { motion, AnimatePresence } from 'framer-motion'
 import { useContext } from 'react'
 import { FormContext } from '../context/FormContext'
+import BodyComponent from '../helpers/getBody'
  
 const damion = Damion({
   weight: '400',
   subsets: ['latin'],
 })
-
 
 import {
   svgPathVariant1,
@@ -37,20 +37,24 @@ export default function NavBar() {
   const [nav, setNav] = useState(false)
   const [animation, setAnimation] = useState('closed')
 
-  const element = document.querySelector('body') as HTMLBodyElement
+  const bodyCo = BodyComponent()
 
   const handleThemeColor = () => {
     currentTheme == 'dark' ? setTheme('light') : setTheme('dark')
     setIsOn(!isOn)
-    element.style.background = `${
-      currentTheme == 'dark' ? 'linear-gradient(to bottom, transparent, #000) #000030': 'linear-gradient(to bottom, transparent, #c1c1c1) #c1deee'
-    }`
+    if (bodyCo instanceof HTMLBodyElement) {
+      bodyCo.style.background = `${
+        currentTheme == 'dark' ? 'linear-gradient(to bottom, transparent, #000) #000030': 'linear-gradient(to bottom, transparent, #c1c1c1) #c1deee'
+      }`
+    }
   }
 
   const handleNav = () => {
     setNav(!nav)
     setAnimation('moving')
-    element.style.overflowY = nav ? 'auto' : 'hidden'
+    if (bodyCo instanceof HTMLBodyElement) {
+      bodyCo.style.overflowY = nav ? 'auto' : 'hidden'
+    }
     setTimeout(() => {
       setAnimation(animation === 'closed' ? 'open' : 'closed')
     }, 500)
