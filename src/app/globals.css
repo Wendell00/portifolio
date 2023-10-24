@@ -44,7 +44,7 @@ body {
   left: 0;
   right: 0;
   height: 10px;
-  background-image: linear-gradient(to right, #000030, #c1deee);
+  background-image: linear-gradient(to right, #0b0bc5, #fff);
   transform: translateX(100%);
   animation: shift-rightwards 1s ease-in-out infinite;
   animation-delay: 0.5s;
@@ -69,16 +69,17 @@ body {
 .icon-toggler-container {
   height: 25px;
   width: 50px;
-  background-image: linear-gradient(to right, #000030, #c1deee);
+  background-image: linear-gradient(to right, #000030, #fff);
   border-radius: 25px;
-  display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   padding: 0 5px;
   cursor: pointer;
   transition: all 0.3s;
+
 }
+
 
 .handle {
   height: 25px;
@@ -99,7 +100,7 @@ body {
 }
 
 [data-darkmode='true'] .icon-toggler-container {
-  background-image: linear-gradient(to right, #000030, #c1deee);
+  background-image: linear-gradient(to right, #0b0bc5, #fff);
 }
 
 [data-darkmode='true'] .toggler-icon {
