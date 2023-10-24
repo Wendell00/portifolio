@@ -94,7 +94,7 @@ export default function NavBar() {
       <div className='z-50 mr-3 flex cursor-pointer flex-row items-center justify-center md:hidden'>
         {!nav && (
           <div
-            className='icon-toggler-container mr-5 p-4'
+            className='icon-toggler-container flex mr-5 p-4'
             data-darkmode={isOn}
             onClick={handleThemeColor}
             style={{ justifyContent: isOn ? 'flex-end' : 'flex-start' }}>
@@ -155,7 +155,7 @@ export default function NavBar() {
             animate={nav ? 'open' : 'closed'}
             variants={secondVariant}>
             <Link
-              className={`font-light transition duration-150 ease-in-out text-[${colorContrastWB} hover:text-[${colorContrast}]`}
+              className={`font-light transition duration-150 ease-in-out text-[${colorContrastWB}] hover:text-[${colorContrast}]`}
               href='/'
               aria-label='Wendell Borges | Home Page'
               onClick={handleNav}>
@@ -168,7 +168,7 @@ export default function NavBar() {
             animate={nav ? 'open' : 'closed'}
             variants={thirdVariant}>
             <Link
-              className={`font-light transition duration-150 ease-in-out text-[${colorContrastWB} hover:text-[${colorContrast}]`}
+              className={`font-light transition duration-150 ease-in-out text-[${colorContrastWB}] hover:text-[${colorContrast}]`}
               href='/about'
               aria-label='Wendell Borges | About Page'
               onClick={handleNav}>
@@ -181,7 +181,7 @@ export default function NavBar() {
             animate={nav ? 'open' : 'closed'}
             variants={fourthVariant}>
             <Link
-              className={`font-light transition duration-150 ease-in-out text-[${colorContrastWB} hover:text-[${colorContrast}]`}
+              className={`font-light transition duration-150 ease-in-out text-[${colorContrastWB}] hover:text-[${colorContrast}]`}
               href='/portfolio'
               aria-label='Wendell Borges | Portfolio Page'
               onClick={handleNav}>
@@ -194,7 +194,7 @@ export default function NavBar() {
             animate={nav ? 'open' : 'closed'}
             variants={fifthVariant}>
             <Link
-              className={`font-light transition duration-150 ease-in-out text-[${colorContrastWB} hover:text-[${colorContrast}]`}
+              className={`font-light transition duration-150 ease-in-out text-[${colorContrastWB}] hover:text-[${colorContrast}]`}
               href='/blog'
               onClick={handleNav}
               aria-label='Wendell Borges | Blog Page'>
@@ -207,7 +207,7 @@ export default function NavBar() {
             animate={nav ? 'open' : 'closed'}
             variants={sixthVariant}>
             <Link
-              className={`font-light transition duration-150 ease-in-out text-[${colorContrastWB} hover:text-[${colorContrast}]`}
+              className={`font-light transition duration-150 ease-in-out text-[${colorContrastWB}] hover:text-[${colorContrast}]`}
               href='/contact'
               aria-label='Wendell Borges | Contact Page'
               onClick={handleNav}>
