@@ -1,24 +1,20 @@
 'use client'
 
 import {Background} from '../components/Background'
-import NavBar from '../components/NavBar'
 import Avatar from '../components/Avatar'
 import {Damion} from 'next/font/google'
 import { motion } from 'framer-motion'
 import Link from 'next/link'
 import { TypeAnimation } from 'react-type-animation'
-import { FormContextProvider } from '../context/FormContext'
 
 const damion = Damion({
   weight: '400',
   subsets: ['latin'],
 })
 
-
-export default function Index() {
+export default function IndexPage() {
   return (
-    <FormContextProvider>
-      <NavBar/>
+    <>
       <main className='w-screen h-screen'>
       <div className='absolute top-0 z-30 flex h-full w-full flex-row items-center justify-center bg-transparent px-6 py-12 text-center md:px-12 lg:text-left'>
           <div className='container mx-auto xl:px-32'>
@@ -88,6 +84,6 @@ export default function Index() {
         </div>
       </main>
       <Background/>
-    </FormContextProvider>
+    </>
   )
 }
