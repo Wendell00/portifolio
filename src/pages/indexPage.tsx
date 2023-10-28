@@ -66,7 +66,7 @@ export default function IndexPage() {
                   </Link>
                   <Link
                     className='mr-2 rounded-xl bg-[#000030] px-7 py-3.5 text-sm font-medium uppercase leading-snug text-zinc-50 shadow-xl transition duration-150 ease-in-out hover:border-[#c1deee] hover:bg-[#c1deee] hover:text-[#000030] hover:shadow-2xl focus:border-[#c1deee] focus:bg-[#c1deee] focus:text-zinc-50 focus:shadow-2xl focus:outline-none focus:ring-0 active:bg-[#c1deee] active:shadow-2xl'
-                    href='/portfolio'
+                    href='/about'
                     role='button'
                     aria-label='Portfolio link button'>
                     PORTFOLIO
