@@ -4,7 +4,7 @@
 export default function About() {
   return (
     <>
-        <p>About</p>
+        <p className="text-[#f00]">About</p>
     </>
   )
 }
