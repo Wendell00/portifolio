@@ -65,11 +65,43 @@ export default function NavBar() {
     <nav className='w-screen h-[90px] flex justify-between items-center px-[50px] fixed z-40'>
       <p className={`${damion.className} text-4xl bold shadow-black cursor-pointer text-[${colorContrastWB}]`}>WB</p>
       <ul className='items-center h-full hidden md:flex'>
-        <li className={`mr-6 cursor-pointer text-white ${colorContrast}`}>Inicio</li>
-        <li className={`mr-6 cursor-pointer text-white ${colorContrast}`}>Sobre</li>
-        <li className={`mr-6 cursor-pointer text-white ${colorContrast}`}>Portfolio</li>
-        <li className={`mr-6 cursor-pointer text-white ${colorContrast}`}>Currículo</li>
-        <li className={`mr-6 cursor-pointer text-white ${colorContrast}`}>Contato</li>
+        <li className={`mr-6 cursor-pointer text-white ${colorContrast}`}>
+            <Link
+              href='/'
+              aria-label='Wendell Borges | Home Page'>
+              Inicio
+            </Link>
+        </li>
+        <li className={`mr-6 cursor-pointer text-white ${colorContrast}`}>
+            <Link
+              href='/about'
+              aria-label='Wendell Borges | About Page'>
+              Sobre
+            </Link>
+        </li>
+        <li className={`mr-6 cursor-pointer text-white ${colorContrast}`}>
+            <Link
+              href='/portfolio'
+              aria-label='Wendell Borges | Portfolio Page'>
+              Portifolio
+            </Link>
+        </li>
+        <li className={`mr-6 cursor-pointer text-white ${colorContrast}`}>
+            <Link
+              href='/wendell-curriculo.pdf'
+              role='button'
+              target='_blank'
+              aria-label='Resume download button'>
+              Currículo
+            </Link>
+        </li>
+        <li className={`mr-6 cursor-pointer text-white ${colorContrast}`}>
+            <Link
+              href='/contact'
+              aria-label='Wendell Borges | Contact Page'>
+              Contato
+            </Link>
+        </li>
       </ul>
       <div
         className='icon-toggler-container hidden md:flex'
