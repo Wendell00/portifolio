@@ -30,7 +30,7 @@ export default function HomeComponent() {
                   initial={{ y: -100, opacity: 0 }}
                   animate={{ y: 0, opacity: 1 }}
                   transition={{ type: 'spring', stiffness: 30 }}>
-                  <h1 className='mb-12 text-white text-4xl font-bold tracking-tight md:text-5xl xl:text-6xl h-[128px] md:h-auto xl:h-[192px]'>
+                  <h1 className='mb-12 text-white text-4xl font-bold tracking-tight md:text-5xl xl:text-6xl xl:h-[192px]'>
                     Wendell Borges
                     <br />Desenvolvedor de
                     <span className='text-[#c1deee] transition duration-150 ease-in-out'>

@@ -3,7 +3,9 @@
 export default function About() {
   return (
     <>
-        <p className="text-[#f00]">About</p>
+        <div className="w-full h-[60vh]">
+              <h2 className="text-4xl">Wendell Borges</h2>
+        </div>
     </>
   )
 }

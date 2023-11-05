@@ -19,13 +19,13 @@ const Avatar = ({
       src={`/me.webp`}
       priority
       loading='eager'
-      alt='Image of Christian B. Martinez'
+      alt='Imagem do Wendell Borges'
       width={400}
       height={400}
-      className={`mx-auto ${height} ${width} rounded-[40%] object-cover ${shadow}`}
+      className={`mx-auto ${height} ${width} rounded-[35%] object-cover ${shadow}`}
     />
     <div
-      className={`absolute inset-0 mx-auto h-full ${width} rounded-[40%] bg-[#c1deee] opacity-25 dark:bg-gradient-to-r dark:from-[#c1deee] dark:to-[#fff] dark:opacity-[20%]`}></div>
+      className={`absolute inset-0 mx-auto h-full ${width} rounded-[35%] bg-[#c1deee] opacity-25 dark:bg-gradient-to-r dark:from-[#c1deee] dark:to-[#fff] dark:opacity-[20%]`}></div>
   </motion.div>
 )
 
