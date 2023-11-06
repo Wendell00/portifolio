@@ -42,6 +42,7 @@ export default function NavBar() {
     currentTheme == 'dark' ? setTheme('light') : setTheme('dark')
     setIsOn(!isOn)
     if (bodyCo instanceof HTMLBodyElement) {
+      console.log(bodyCo)
       bodyCo.style.background = `${
         currentTheme == 'dark' ? 'linear-gradient(to bottom, transparent, #000) #000030': 'linear-gradient(to bottom, transparent, #c1c1c1) #c1deee'
       }`

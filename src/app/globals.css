@@ -111,3 +111,15 @@ body {
     width: 20px;
   }
 }
+
+.title-about{
+  -webkit-box-decoration-break: clone;
+  -webkit-text-fill-color: transparent;
+  color: unset;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  font-weight: 500;
+  background-clip: text;
+  background-image: linear-gradient(to right bottom, rgb(255, 255, 255) 30%, rgba(255, 255, 255, 0.38));
+}
+
