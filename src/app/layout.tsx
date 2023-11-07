@@ -19,15 +19,15 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <FormContextProvider>
-          <NavBar/>
-          <ThemeProvider>
-            <div className='w-screen h-auto pt-[90px]'>
-              {children}
-            </div>
-          </ThemeProvider>
-        </FormContextProvider>
-        </body>
+          <div className="next-theme w-screen min-h-screen h-auto">
+            <FormContextProvider>
+              <NavBar/>
+                <div className='w-screen h-auto pt-[90px]'>
+                  {children}
+                </div>
+            </FormContextProvider>
+          </div>
+      </body>
     </html>
   )
 }
