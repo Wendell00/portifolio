@@ -1,9 +1,19 @@
 'use client'
 
-export default function Portfolio() {
+import React, { useState, useEffect } from "react";
+import { useTheme } from "next-themes";
+
+export default function Portfolio(){
+  const theme = useTheme();
+  const [background, setBackground] = useState(theme.background);
+
+  useEffect(() => {
+    document.body.style.backgroundColor = background;
+  }, [background]);
+
   return (
-    <>
-        <p className="text-[#f00]">Portfolio</p>
-    </>
-  )
-}
+    <div>
+      oi
+    </div>
+  );
+};

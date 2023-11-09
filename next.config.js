@@ -1,4 +1,8 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
+const nextConfig = {
+    theme: {
+        background: "#ffffff",
+      },
+}
 
 module.exports = nextConfig
