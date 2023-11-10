@@ -3,7 +3,7 @@ import { Inter } from 'next/font/google'
 import './globals.css'
 import NavBar from './components/NavBar'
 import { FormContextProvider } from './context/FormContext'
-import { ThemeProvider } from 'next-themes'
+import Providers from "./components/providers";
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
@@ -19,14 +19,16 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-          <div className="next-theme w-screen min-h-screen h-auto">
             <FormContextProvider>
-              <NavBar/>
-                <div className='w-screen h-auto pt-[90px]'>
-                  {children}
+              <Providers>
+                <div className="w-screen min-h-screen h-auto bg-gradient-to-b dark:from-[#000030] dark:to-[#000000] from-[#c1deee] to-[#c1c1c1]">
+                  <NavBar/>
+                    <div className='w-screen h-auto pt-[90px]'>
+                      {children}
+                    </div>
                 </div>
+              </Providers>
             </FormContextProvider>
-          </div>
       </body>
     </html>
   )

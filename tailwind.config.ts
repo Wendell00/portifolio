@@ -13,11 +13,18 @@ const config: Config = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      background:{
+        'dark-body':
+         'background: linear-gradient(to bottom, transparent, #000) #000030;',
+        'light-body':
+         'background: linear-gradient(to bottom, transparent, #fff) #c1deee;'
+      },
       height:{
         'quaseFull': '100vh - 90px'
       }
     },
   },
   plugins: [],
+  darkMode: "class",
 }
 export default config

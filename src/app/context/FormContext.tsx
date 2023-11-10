@@ -8,17 +8,17 @@ interface FormContextProviderProps {
 
 interface FormContextData {
   currentTheme: string;
-  setTheme: (modal: string) => void;
+  setCurrentTheme: (modal: string) => void;
 }
 
 export const FormContext = createContext<FormContextData>({} as FormContextData);
 
 export function FormContextProvider({ children }: FormContextProviderProps) {
-  const [currentTheme, setTheme] = useState('light')
+  const [currentTheme, setCurrentTheme] = useState('light')
 
   return (
     <FormContext.Provider value={{ 
-      currentTheme, setTheme}}>
+      currentTheme, setCurrentTheme}}>
         {children}
     </FormContext.Provider>
   )

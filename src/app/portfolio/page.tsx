@@ -3,7 +3,7 @@ export default function Portfolio(){
 
   return (
     <>
-      Portfolio
+      <p className="white dark:text-red-900">Portfolio</p>
     </>
   );
 };
