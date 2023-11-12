@@ -29,7 +29,6 @@ const DarkMode = () => {
 
   useEffect(() => {
     setMounted(true);
-    setTheme('dark')
   }, []);
 
   if (!mounted) {
