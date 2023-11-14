@@ -86,9 +86,9 @@ export default function NavBar() {
             </Link>
         </li>
       </ul>
-      <DarkMode/>
+      <DarkMode mobile={false}/>
       <div className='z-50 mr-3 flex cursor-pointer flex-row items-center justify-center md:hidden'>
-        <DarkMode/>
+        <DarkMode mobile={true}/>
         <div onClick={handleNav}>
           <svg
             width='29'

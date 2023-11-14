@@ -7,7 +7,11 @@ import { FaMoon, FaSun } from 'react-icons/fa'
 import { useContext } from 'react'
 import { FormContext } from '../context/FormContext'
 
-const DarkMode = () => {
+interface MobileProps {
+  mobile: boolean;
+}
+
+const DarkMode = (props:MobileProps) => {
   const [mounted, setMounted] = useState(false);
   const { theme, setTheme } = useTheme();
   const [isOn, setIsOn] = useState(false)
@@ -37,7 +41,7 @@ const DarkMode = () => {
 
   return (
     <div
-        className='icon-toggler-container flex mr-5 p-4 relative z-90'
+        className={`icon-toggler-container flex mr-5 p-4 relative z-90 ${props.mobile ? 'md:hidden' : 'hidden md:flex'}`}
         data-darkmode={isOn}
         onClick={handleThemeColor}
         style={{ justifyContent: isOn ? 'flex-end' : 'flex-start' }}>

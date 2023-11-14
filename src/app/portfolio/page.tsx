@@ -1,23 +1,28 @@
 'use client'
 
-import { motion } from 'framer-motion';
+import { motion, useScroll, useMotionValueEvent } from 'framer-motion';
 import {useEffect, useState} from 'react'
 
-export default function Portfolio(){
-  const [scrollY, setScrollY] = useState(0);
 
-  const handleClick = () => {
-    setScrollY(window.scrollY)
-  }
+export default function Portfolio(){
+  const [scrollPosition, setScrollPosition] = useState(0)
+  const { scrollY } = useScroll()
+
+  useMotionValueEvent(scrollY, "change", (latest) => {
+    setScrollPosition(latest)
+  })
+
+  useEffect(() =>{
+  }, [scrollPosition])
 
   return (
     <>
-      <div className="h-[330vh] w-screen" onClick={handleClick}>
+      <div className="h-[330vh] w-screen">
         <motion.div
           style={{
             width: 200,
             height: 200,
-            backgroundColor: `rgb(${scrollY}, ${scrollY}, ${scrollY})`,
+            backgroundColor: `rgb(${scrollPosition}, ${scrollPosition}, ${scrollPosition})`,
             position: 'fixed',
             marginTop: '18rem',
           }}
