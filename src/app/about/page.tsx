@@ -5,7 +5,9 @@ export default function About(){
 
   return (
     <>
-      <IndexAbout/>
+      <div className='w-screen h-[330vh]'>
+        <IndexAbout/>
+      </div>
     </>
   );
 };
