@@ -2,11 +2,8 @@
 
 import { Damion } from 'next/font/google'
 import { useState } from 'react'
-import { FaMoon, FaSun } from 'react-icons/fa'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
-import { useContext } from 'react'
-import { FormContext } from '../context/FormContext'
 import BodyComponent from '../helpers/getBody'
 import DarkMode from './darkMode'
  

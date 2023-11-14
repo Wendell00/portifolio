@@ -1,13 +1,11 @@
-'use client'
+import IndexAbout from './components/indexAbout'
 
-import { motion } from 'framer-motion'
+export default function About(){
 
-export default function About() {
+
   return (
     <>
-        <div className="w-full h-auto">
-
-        </div>
+      <IndexAbout/>
     </>
-  )
-}
+  );
+};

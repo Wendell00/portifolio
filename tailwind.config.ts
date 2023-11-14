@@ -14,7 +14,7 @@ const config: Config = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
       height:{
-        'quaseFull': '100vh - 90px'
+        'quaseFull': 'calc(100vh - 90px)'
       }
     },
   },
