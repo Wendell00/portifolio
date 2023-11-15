@@ -109,7 +109,6 @@ body {
   line-height: 1;
   letter-spacing: -0.02em;
   font-weight: 500;
-  background: linear-gradient(to right bottom, rgb(255, 255, 255) 30%, rgba(255, 255, 255, 0.38));
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;

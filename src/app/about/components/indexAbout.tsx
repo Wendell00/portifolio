@@ -43,168 +43,161 @@ export default function IndexAbout(){
   }
 
   return (
-    <div className='h-quaseFull w-full fixed'>
-        <div className="w-full h-[85%] box-border">
-          <ContentAbout/>
-        </div>
-        <div className="w-full h-[15%] text-[10vh]">
-            <div className={`${damion.className} title-about w-screen h-full text-[7vw] flex items-center justify-center tracking-[0.2em] color-[#eee] opacity-60`}>
+    <div className='h-quaseFull w-full fixed flex'>
+        <div className='w-[10%] h-full flex flex-col relative top-0 left-0'>
+          <div className={`${damion.className} title-about w-full h-full text-[7vh] flex flex-col items-center justify-center tracking-[0.2em] text-[#000] dark:text-[#eee] opacity-60`}>
             <motion.h1
-            animate={{translateY: pegarNumero(0)}}
-            transition={{
-              type: 'spring',
-              damping: 8,
-              mass: .3,
-              stiffness: 100,
-            }}
-            >
-              W
-            </motion.h1>
+                animate={{translateY: pegarNumero(0)}}
+                transition={{
+                  type: 'spring',
+                  damping: 8,
+                  mass: .3,
+                  stiffness: 100,
+                }}
+                >
+                  W
+                </motion.h1>
+                <motion.h1
+                  animate={{translateY: pegarNumero(0.0714)}}
+                  transition={{
+                    type: 'spring',
+                    damping: 8,
+                    mass: .3,
+                    stiffness: 100,
+                  }}
+                >
+                  E
+                </motion.h1>
+                <motion.h1
+                  animate={{translateY: pegarNumero(0.0714 * 2)}}
+                  transition={{
+                    type: 'spring',
+                    damping: 8,
+                    mass: .3,
+                    stiffness: 100,
+                  }}
+                >
+                  N
+                </motion.h1>
+                <motion.h1
+                  animate={{translateY: pegarNumero(0.0714 * 3)}}
+                  transition={{
+                    type: 'spring',
+                    damping: 8,
+                    mass: .3,
+                    stiffness: 100,
+                  }}
+                >
+                  D
+                </motion.h1>
+                <motion.h1
+                  animate={{translateY: pegarNumero(0.0714 * 4)}}
+                  transition={{
+                    type: 'spring',
+                    damping: 8,
+                    mass: .3,
+                    stiffness: 100,
+                  }}
+                >
+                  E
+                </motion.h1>
+                <motion.h1
+                  animate={{translateY: pegarNumero(0.0714 * 5)}}
+                  transition={{
+                    type: 'spring',
+                    damping: 8,
+                    mass: .3,
+                    stiffness: 100,
+                  }}
+                >
+                  L
+                </motion.h1>
+                <motion.h1
+                  animate={{translateY: pegarNumero(0.0714 * 6)}}
+                  transition={{
+                    type: 'spring',
+                    damping: 8,
+                    mass: .3,
+                    stiffness: 100,
+                  }}
+                >
+                  L
+                </motion.h1>
+              </div>
+          </div>
+          <div className="w-[80%] h-[100%] box-border">
+            <ContentAbout/>
+          </div>
+          <div className='w-[10%] h-full flex flex-col relative top-0 right-0'>
+          <div className={`${damion.className} title-about w-full h-full text-[7vh] flex flex-col items-center justify-center tracking-[0.2em] text-[#000] dark:text-[#eee] opacity-60`}>
             <motion.h1
-              animate={{translateY: pegarNumero(0.0714)}}
-              transition={{
-                type: 'spring',
-                damping: 8,
-                mass: .3,
-                stiffness: 100,
-              }}
-            >
-              E
-             </motion.h1>
-             <motion.h1
-              animate={{translateY: pegarNumero(0.0714 * 2)}}
-              transition={{
-                type: 'spring',
-                damping: 8,
-                mass: .3,
-                stiffness: 100,
-              }}
-            >
-              N
-             </motion.h1>
-             <motion.h1
-              animate={{translateY: pegarNumero(0.0714 * 3)}}
-              transition={{
-                type: 'spring',
-                damping: 8,
-                mass: .3,
-                stiffness: 100,
-              }}
-            >
-              D
-             </motion.h1>
-             <motion.h1
-              animate={{translateY: pegarNumero(0.0714 * 4)}}
-              transition={{
-                type: 'spring',
-                damping: 8,
-                mass: .3,
-                stiffness: 100,
-              }}
-            >
-              E
-             </motion.h1>
-             <motion.h1
-              animate={{translateY: pegarNumero(0.0714 * 5)}}
-              transition={{
-                type: 'spring',
-                damping: 8,
-                mass: .3,
-                stiffness: 100,
-              }}
-            >
-              L
-             </motion.h1>
-             <motion.h1
-              animate={{translateY: pegarNumero(0.0714 * 6)}}
-              transition={{
-                type: 'spring',
-                damping: 8,
-                mass: .3,
-                stiffness: 100,
-              }}
-            >
-              L
-             </motion.h1>
-             <motion.h1
-              animate={{translateY: pegarNumero(0.0714 * 7)}}
-              transition={{
-                type: 'spring',
-                damping: 8,
-                mass: .3,
-                stiffness: 100,
-              }}
-            >
-              &nbsp;
-             </motion.h1>
-             <motion.h1
-              animate={{translateY: pegarNumero(0.0714 * 8)}}
-              transition={{
-                type: 'spring',
-                damping: 8,
-                mass: .3,
-                stiffness: 100,
-              }}
-            >
-              B
-             </motion.h1>
-             <motion.h1
-              animate={{translateY: pegarNumero(0.0714 * 9)}}
-              transition={{
-                type: 'spring',
-                damping: 8,
-                mass: .3,
-                stiffness: 100,
-              }}
-            >
-              O
-             </motion.h1>
-             <motion.h1
-              animate={{translateY: pegarNumero(0.0714 * 10)}}
-              transition={{
-                type: 'spring',
-                damping: 8,
-                mass: .3,
-                stiffness: 100,
-              }}
-            >
-              R
-             </motion.h1>
-             <motion.h1
-              animate={{translateY: pegarNumero(0.0714 * 11)}}
-              transition={{
-                type: 'spring',
-                damping: 8,
-                mass: .3,
-                stiffness: 100,
-              }}
-            >
-              G
-             </motion.h1>
-             <motion.h1
-              animate={{translateY: pegarNumero(0.0714 * 12)}}
-              transition={{
-                type: 'spring',
-                damping: 8,
-                mass: .3,
-                stiffness: 100,
-              }}
-            >
-              E
-             </motion.h1>
-             <motion.h1
-              animate={{translateY: pegarNumero(0.0714 * 13)}}
-              transition={{
-                type: 'spring',
-                damping: 8,
-                mass: .3,
-                stiffness: 100,
-              }}
-            >
-              S
-             </motion.h1>
+                animate={{translateY: pegarNumero(0.0714 * 7)}}
+                transition={{
+                  type: 'spring',
+                  damping: 8,
+                  mass: .3,
+                  stiffness: 100,
+                }}
+              >
+                B
+              </motion.h1>
+              <motion.h1
+                animate={{translateY: pegarNumero(0.0714 * 8)}}
+                transition={{
+                  type: 'spring',
+                  damping: 8,
+                  mass: .3,
+                  stiffness: 100,
+                }}
+              >
+                O
+              </motion.h1>
+              <motion.h1
+                animate={{translateY: pegarNumero(0.0714 * 9)}}
+                transition={{
+                  type: 'spring',
+                  damping: 8,
+                  mass: .3,
+                  stiffness: 100,
+                }}
+              >
+                R
+              </motion.h1>
+              <motion.h1
+                animate={{translateY: pegarNumero(0.0714 * 10)}}
+                transition={{
+                  type: 'spring',
+                  damping: 8,
+                  mass: .3,
+                  stiffness: 100,
+                }}
+              >
+                G
+              </motion.h1>
+              <motion.h1
+                animate={{translateY: pegarNumero(0.0714 * 11)}}
+                transition={{
+                  type: 'spring',
+                  damping: 8,
+                  mass: .3,
+                  stiffness: 100,
+                }}
+              >
+                E
+              </motion.h1>
+              <motion.h1
+                animate={{translateY: pegarNumero(0.0714 * 12)}}
+                transition={{
+                  type: 'spring',
+                  damping: 8,
+                  mass: .3,
+                  stiffness: 100,
+                }}
+              >
+                S
+              </motion.h1>
             </div>
-        </div>
+          </div>
     </div>
   );
 };
