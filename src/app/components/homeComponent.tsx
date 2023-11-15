@@ -2,15 +2,9 @@
 
 import {Background} from './Background'
 import Avatar from './Avatar'
-import {Damion} from 'next/font/google'
 import { motion } from 'framer-motion'
 import Link from 'next/link'
 import { TypeAnimation } from 'react-type-animation'
-
-const damion = Damion({
-  weight: '400',
-  subsets: ['latin'],
-})
 
 export default function HomeComponent() {
   return (
