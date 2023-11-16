@@ -45,7 +45,7 @@ export default function IndexAbout(){
   return (
     <div className='h-quaseFull w-full fixed flex'>
         <div className='w-[10%] h-full flex flex-col relative top-0 left-0'>
-          <div className={`${damion.className} title-about w-full h-full text-[7vh] flex flex-col items-center justify-center tracking-[0.2em] text-[#000] dark:text-[#eee] opacity-60`}>
+          <div className={`${damion.className} title-about dark:text-[#eee] text-[#000] w-full h-full text-[7vh] flex flex-col items-center justify-center tracking-[0.2em] opacity-60`}>
             <motion.h1
                 animate={{translateY: pegarNumero(0)}}
                 transition={{
