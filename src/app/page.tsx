@@ -1,8 +1,6 @@
-'use client'
-
 import HomeComponent from './components/homeComponent'
 
-export default function Home() {
+export default async function Home() {
   return (
     <HomeComponent/>
   )
