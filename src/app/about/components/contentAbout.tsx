@@ -50,13 +50,25 @@ export default function ContentAbout(){
                     </motion.p>
                 </motion.div>
             ): (
-                <motion.div className="w-full h-full grid grid-rows-2 grid-cols-3 items-center p-[80px] justify-center gap-4">
-                  <div className='w-full h-full bg-[#111]'>1</div>
-                  <div className='w-full h-full bg-[#111]'>2</div>
-                  <div className='w-full h-full bg-[#111]'>3</div>
-                  <div className='w-full h-full bg-[#111]'>4</div>
-                  <div className='w-full h-full bg-[#111]'>5</div>
-                  <div className='w-full h-full bg-[#111]'>6</div>
+                <motion.div className="w-full h-full grid grid-rows-2 grid-cols-3 items-center p-[80px] justify-center gap-4 dark:bg-gradientRadialDark bg-gradientRadialLight">
+                  <div className='w-full h-full bg-[#22222299] rounded-md border border-[#444]'>
+
+                  </div>
+                  <div className='w-full h-full bg-[#22222299] rounded-md border border-[#444]'>
+
+                  </div>
+                  <div className='w-full h-full bg-[#22222299] rounded-md border border-[#444]'>
+
+                  </div>
+                  <div className='w-full h-full bg-[#22222299] rounded-md border border-[#444]'>
+
+                  </div>
+                  <div className='w-full h-full bg-[#22222299] rounded-md border border-[#444]'>
+
+                  </div>
+                  <div className='w-full h-full bg-[#22222299] rounded-md border border-[#444]'>
+
+                  </div>
                 </motion.div>
             ) }
         </AnimatePresence>
