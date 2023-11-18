@@ -115,6 +115,13 @@ body {
   background-size: cover;
 }
 
+.bgText{
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  background-size: cover;
+}
+
 /* width */
 ::-webkit-scrollbar {
   width: 10px;
