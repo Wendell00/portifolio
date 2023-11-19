@@ -32,8 +32,8 @@ export default function IndexAbout(){
   }, []);
 
   const pegarNumero = (valor: number): number | string => {
-    const medida1 = 1 - valor
-    const medida = 1 - medida1
+    const medida1 = 1 - valor;
+    const medida = 1 - medida1;
     if(medida <= scrollYProgress.get()){
       return 0
     }else if(medida >= scrollYProgress.get()){
