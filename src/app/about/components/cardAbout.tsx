@@ -1,4 +1,3 @@
-// App.tsx
 import React, { useEffect, useRef } from 'react';
 import VanillaTilt from 'vanilla-tilt';
 
