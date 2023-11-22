@@ -1,7 +1,7 @@
 'use client'
 
 import { motion, useScroll, AnimatePresence} from 'framer-motion';
-import {useEffect, useState} from 'react'
+import {useEffect, useState, useRef} from 'react'
 import {Roboto} from 'next/font/google'
 import Skills from './skills';
 
@@ -28,11 +28,13 @@ export default function ContentAbout(){
     };
   }, []);
 
+  const animatePresenceRef = useRef(null);
+
   return (
     <div className='min-w-full w-[80vw] h-full flex'>
           <AnimatePresence>
             {scrollYProgress.get() < 0.3 && (
-                  <motion.div className="w-full h-full flex items-center justify-center flex-col mt-[-40px]">
+                  <motion.div className="w-full h-full flex items-center justify-center flex-col mt-[-40px]" ref={animatePresenceRef}>
                       <motion.h2 className='contentAbout bg-gradient-to-b from-[#444] to-[#000030] dark:from-[#fff] dark:to-[#ffffff77] mb-[30px] text-[80px]'
                         key="titulo"
                         initial={{ y: -100, opacity: 0 }}
@@ -52,7 +54,7 @@ export default function ContentAbout(){
                   </motion.div>
             )}
             </AnimatePresence>
-            {scrollYProgress.get() > 0.3 && (
+            {!animatePresenceRef.current && (
               <Skills/>
             ) }
     </div>
