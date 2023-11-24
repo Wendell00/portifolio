@@ -48,13 +48,13 @@ export default function ContentAbout(){
                           initial={{ y: 100, opacity: 0 }}
                           animate={{ y: 0, opacity: 1 }}
                           exit={{ y: -100, opacity: 0 }}
-                          transition={{ type: 'spring', stiffness: 30, delay: 0.5 }}>
+                          transition={{ type: 'spring', stiffness: 30, delay: 0.1 }}>
                           Sou desenvolvedor Front-End, estudo essa área há mais 3 anos, atualmente possuo 20 anos e sempre busco ao máximo se atualizar a novas tecnologias.
                       </motion.p>
                   </motion.div>
             )}
             </AnimatePresence>
-            {!animatePresenceRef.current && (
+            {!animatePresenceRef.current && scrollYProgress.get() > 0.3 &&(
               <Skills/>
             ) }
     </div>
