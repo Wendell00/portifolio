@@ -58,6 +58,3 @@ export default function ContentAbout(){
     </div>
   );
 };
-
-
-// Utilizar ref se a div de cima está na tela não renderizar o skills, utilizando useRef
