@@ -2,7 +2,6 @@ import IndexAbout from './components/indexAbout'
 
 export default function About(){
 
-
   return (
     <>
       <div className='w-screen h-[300vh] dark:bg-black bg-[#c1c1c1]'>
